@@ -1,0 +1,17 @@
+#+TITLE: Automated Testing of Vlabs Landing Pages
+#+AUTHOR: VLEAD
+#+DATE: [2017-05-03 Wednesday]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ./org-templates/level-0.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+
+
+* Introduction 
+  This document describes the automation testing done using
+  selenium on  =vlabs-landing-pages=.
+
+
