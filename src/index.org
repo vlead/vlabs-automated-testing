@@ -29,7 +29,7 @@
   3) =Selenium= Icon will be shown in the browser top corner.
     
 * Procedure
-  This automated testing is done for one lab =Virtual Eletrical Machine Lab=
+  This automated testing is done for one Lab 
 ** Test Login/Logout
   Follow the below instructions to test =Login/Logout= 
   1) Click on =selenium= icon in the firefox browser
@@ -103,7 +103,7 @@
      
 ** Test Lab URL is working 
   Follow the below instructions to test =Virtual Proteomics
-  Lab= is Working
+  Lab= 
   1) Steps 1, 2, and 3 is same as mentioned in the above
      test case.
   2) Visit the browser and access the =Virtual Proteomics
@@ -187,5 +187,352 @@
 
   4) Similarly to test all others labs, update the lab_id in the table
      format (or) in the script and run tests.
+     
+** Test Experiment, Full Screen and Feedbacks are working 
+  Follow the below instructions to test =FAB Laboratory= 
+  1) Steps 1, 2, and 3 is same as mentioned in the above
+     test case.
+  2) Visit  the browser  and  access  the experiments  and
+     feedbacks of  =FAB Laboratory= lab. The  auto generated
+     source code  will be visible  in the form of  table and
+     xml code in =selenium RC=.
+  3) The source code for the above testing will be generated
+     as follows:
+     #+BEGIN_SRC html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mybox.vlabs.ac.in/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=FAB Laboratory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Course</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@ddd96c36679942f1bd2e9201193397a2']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='popup()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@19f35668f90047bb8da2c698443bb259']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@06c44f66f7bc41a2b5d4460c2bc4bbab']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@9344ce21aefb441494113c724c72e1c1']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@2411918b64274853b65cc3d60ee22f95']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@64d53cb788cc4bad96c7f00ac27196cc']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@a54182829b5c4aaba2a7b2f78a34437e']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@648401f06d8745d7821bf5a7b45e8c58']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@47cfc4fbc4e14fc8ba8a5e86c5b20c30']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@b23c01e2244d477aa330e4c237c4fb07']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@fb43e0a078b24acfa4646ecdd637c965']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p &gt; button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Simulator</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@52d56932c5fb43d3a2c6fc6b938ee18a']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@6ed5d60b0f9640e791190eb31c69c89b']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@c9bca2067d07463caa20f30cf8530c3c']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@5a8995f45c9a4d0a91e7262fe6bec272']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Course</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
+
+     #+END_SRC
+  4) Similarly Repeat the same test case for all others labs.
      
 
