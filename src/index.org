@@ -101,3 +101,91 @@
      </html>
      #+END_EXAMPLE
      
+** Test Lab URL is working 
+  Follow the below instructions to test =Virtual Proteomics
+  Lab= is Working
+  1) Steps 1, 2, and 3 is same as mentioned in the above
+     test case.
+  2) Visit the browser and access the =Virtual Proteomics
+     Lab= lab. The following table will be generated in
+     =selenium RC=.
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | command      | Target                                                                     | Value             |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | open         | /                                                                          |                   |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | clickAndWait | //article[@id='course-v1:Virtual-Labs+biotech25+Anytime']/a/header/div/div |                   |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | clickAndWait | link=Enroll in biotech25                                                   |                   |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | click        | link=Sign in.                                                              |                   |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | type         | id=login-email                                                             | honor@example.com |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | type         | id=login-password                                                          | edx               |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+     | clickAndWait | //button[@type='submit']                                                   |                   |
+     |--------------+----------------------------------------------------------------------------+-------------------|
+
+  3) The source code for the above testing will be generated
+     as follows:
+     #+BEGIN_SRC html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head profile="http://selenium-ide.openqa.org/profiles/test-case">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="selenium.base" href="http://mybox.vlabs.ac.in/" />
+    <title>New Test</title>
+  </head>
+  <body>
+    <table cellpadding="1" cellspacing="1" border="1">
+      <thead>
+        <tr><td rowspan="1" colspan="3">New Test</td></tr>
+      </<th></th>ead><tbody>
+        <tr>
+          <td>open</td>
+          <td>/</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>clickAndWait</td>
+          <td>//article[@id='course-v1:Virtual-Labs+biotech25+Anytime']/a/header/div/div</td>
+          <td></<td></td>>
+        </tr>
+        <tr>
+          <td>clickAndWait</td>
+          <td>link=Enroll in biotech25</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>click</td>
+          <td>link=Sign in.</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>id=login-email</td>
+          <td>honor@example.com</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>id=login-password</td>
+          <td>edx</td>
+        </tr>
+        <tr>
+          <td>clickAndWait</td>
+          <td>//button[@type='submit']</td>
+          <td></td>
+        </tr>
+        
+    </tbody></table>
+  </body>
+</html>
+
+#+END_SRC
+
+  4) Similarly to test all others labs, update the lab_id in the table
+     format (or) in the script and run tests.
+     
+
