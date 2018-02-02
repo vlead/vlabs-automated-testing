@@ -27,7 +27,77 @@
      to add Selenium IDE to firefox.
   2) Restart your browser to apply changes.
   3) =Selenium= Icon will be shown in the browser top corner.
-
-
-
     
+* Procedure
+  This automated testing is done for one lab =Virtual Eletrical Machine Lab=
+** Test Login/Logout
+  Follow the below instructions to test =Login/Logout= 
+  1) Click on =selenium= icon in the firefox browser
+  2) Enter the =url= in the =Base URL= section in =selenium
+     RC= window as follows
+     #+BEGIN_EXAMPLE
+     http://mybox.vlabs.ac.in
+     #+END_EXAMPLE
+  3) Click on the =record= button which is =red= in color
+  4) Visit the browser and login. The following table will
+     be generated in =selenium RC=. 
+     |--------------+------------------------+-------------------|
+     | command      | Target                 | Value             |
+     |--------------+------------------------+-------------------|
+     | open         | /logout                |                   |
+     |--------------+------------------------+-------------------|
+     | open         | /login                 |                   |
+     |--------------+------------------------+-------------------|
+     | type         | id=login-email         | honor@example.com |
+     |--------------+------------------------+-------------------|
+     | type         | id=login-password      | edx               |
+     |--------------+------------------------+-------------------|
+     | clickAndWait | button[@type='submit'] |                   |
+     |--------------+------------------------+-------------------| 
+  5) The source code for the above testing will be generated
+     as follows:
+     #+BEGIN_EXAMPLE
+     <?xml version="1.0" encoding="UTF-8"?>
+     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+     <head profile="http://selenium-ide.openqa.org/profiles/test-case">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link rel="selenium.base" href="http://mybox.vlabs.ac.in/login" />
+     <title>New Test</title>
+     </head>
+     <body>
+     <table cellpadding="1" cellspacing="1" border="1">
+     <thead>
+     <tr><td rowspan="1" colspan="3">New Test</td></tr>
+     </thead><tbody>
+     <tr>
+     <td>open</td>
+     <td>/logout</td>
+     <td></td>
+     </tr>
+     <tr>
+     <td>open</td>
+     <td>/login</td>
+     <td></td>
+     </tr>
+     <tr>
+     <td>type</td>
+     <td>id=login-email</td>
+     <td>honor@example.com</td>
+     </tr>
+     <tr>
+     <td>type</td>
+     <td>id=login-password</td>
+     <td>edx</td>
+     </tr>
+     <tr>
+     <td>clickAndWait</td>
+     <td>//button[@type='submit']</td>
+     <td></td>
+     </tr>
+     
+     </tbody></table>
+     </body>
+     </html>
+     #+END_EXAMPLE
+     
