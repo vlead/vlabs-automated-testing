@@ -590,6 +590,16 @@
 	<td>30000</td>
 </tr>
 <tr>
+	<td>assertTextPresent</td>
+	<td>Virtual FAB Laboratory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Computer Controlled Cutting of wooden object</td>
+	<td></td>
+</tr>
+<tr>
 	<td>selectWindow</td>
 	<td>title=Feedback Portal</td>
 	<td></td>
@@ -624,13 +634,28 @@
 	<td>css=button.btn.btn-primary</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>
 
 #+END_SRC
 
+  4) Similarly Repeat the same test case for all other
+     experiments of a lab by updating the experiment name as
+     shown in the below snippet.
+
+#+BEGIN_EXAMPLE
+<tr>
+	<td>assertTextPresent</td>
+	<td>Virtual FAB Laboratory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Computer Controlled Cutting of wooden object</td>
+	<td></td>
+</tr>
+#+END_EXAMPLE
 ** Test Visit, Fill up and Submit Lab Feedback Form 
   Follow the below instructions to test feedback of =FAB
   Laboratory=
@@ -685,6 +710,11 @@
 	<td>30000</td>
 </tr>
 <tr>
+	<td>assertTextPresent</td>
+	<td>Virtual FAB Laboratory</td>
+	<td></td>
+</tr>
+<tr>
 	<td>selectWindow</td>
 	<td>title=Feedback Portal</td>
 	<td></td>
@@ -728,4 +758,15 @@
 </tbody></table>
 </body>
 </html>
+
 #+END_SRC
+
+  4) Similarly Repeat the same test case for all other labs
+     by updating the lab name as shown in the below snippet.
+#+BEGIN_EXAMPLE
+<tr>
+	<td>assertTextPresent</td>
+	<td>Virtual FAB Laboratory</td>
+	<td></td>
+</tr>
+#+END_EXAMPLE
