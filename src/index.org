@@ -631,4 +631,101 @@
 </html>
 
 #+END_EXAMPLE
+** Test Visit, Fill up and Submit Lab Feedback Form 
+  Follow the below instructions to test feedback of =FAB
+  Laboratory=
+  1) Steps 1, 2, and 3 is same as mentioned in the above
+     test case.
+  2) Visit the browser and access the Feedback section of =FAB Laboratory=
+     lab. The auto generated source code will be visible in
+     the form of table and xml code in =selenium RC=.
+#+BEGIN_EXAMPLE
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mybox.vlabs.ac.in/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=FAB Laboratory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Course</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[@id='block-v1:Virtual-Labs+mech18+Anytime+type@sequential+block@5a8995f45c9a4d0a91e7262fe6bec272']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Click here</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>_blank</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=Feedback Portal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='How much did you know about the lab?'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='Is this lab part of your curriculum?'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='Did you find any bugs in the lab?'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='Did this lab help you understand the concept better?'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='Will you recommend this lab to others?'])[10]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=7</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+</tr>
 
+</tbody></table>
+</body>
+</html>
+
+#+END_EXAMPLE
