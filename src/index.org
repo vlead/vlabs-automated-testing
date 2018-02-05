@@ -545,8 +545,7 @@
      =FAB Laboratory= lab. The auto generated source code
      will be visible in the form of table and xml code in
      =selenium RC=.
-
-#+BEGIN_EXAMPLE
+#+BEGIN_SRC html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -630,7 +629,8 @@
 </body>
 </html>
 
-#+END_EXAMPLE
+#+END_SRC
+
 ** Test Visit, Fill up and Submit Lab Feedback Form 
   Follow the below instructions to test feedback of =FAB
   Laboratory=
@@ -639,7 +639,8 @@
   2) Visit the browser and access the Feedback section of =FAB Laboratory=
      lab. The auto generated source code will be visible in
      the form of table and xml code in =selenium RC=.
-#+BEGIN_EXAMPLE
+
+#+BEGIN_SRC html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -727,5 +728,4 @@
 </tbody></table>
 </body>
 </html>
-
-#+END_EXAMPLE
+#+END_SRC
