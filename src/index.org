@@ -1,4 +1,3 @@
-
 #+TITLE: Automated Testing of Vlabs Landing Pages
 #+AUTHOR: VLEAD
 #+DATE: [2017-05-03 Wednesday]
